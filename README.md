@@ -1,87 +1,58 @@
-# 8051-Based Motor Condition Monitoring System
+# Internship Projects and Tasks
 
-## Project Overview
+## About
 
-This project demonstrates a basic motor condition monitoring system using an 8051-compatible microcontroller. The firmware monitors two simulated digital warning inputs representing temperature and vibration conditions and controls visual and audible warning indicators.
+This repository contains the projects, practical assignments, and technical tasks completed as part of my internship. It documents my learning progress, implementation work, debugging activities, testing, and project outcomes.
 
-The project uses Embedded C, Keil µVision, and Proteus Design Suite.
+The repository is maintained to demonstrate my technical skills, practical application of concepts, and progress throughout the internship.
 
-## Objectives
+## Internship Objectives
 
-- Develop firmware for an 8051-compatible microcontroller.
-- Monitor two digital warning inputs.
-- Indicate normal operation using a green LED.
-- Activate a red LED and buzzer when either warning input is HIGH.
-- Compile the firmware and integrate it with a simulated microcontroller circuit.
+- Apply theoretical concepts to practical engineering problems.
+- Develop and test programs using relevant development tools.
+- Understand debugging and troubleshooting techniques.
+- Improve code quality, logical reasoning, and problem-solving skills.
+- Document technical work and maintain project files using GitHub.
 
-## Hardware Components
+## Technologies and Tools
 
-- AT89C51-compatible microcontroller
-- Two digital logic-state inputs
-- Green LED and red LED
-- Two LED current-limiting resistors
-- Buzzer
-- Crystal oscillator and associated capacitors
-- Reset circuit and power connections
+The technologies and tools used vary according to the task and project. They may include:
 
-## Software Tools
+- **Programming:** C, Embedded C, C++
+- **Embedded Systems:** 8051 microcontroller and related peripherals
+- **Development Tools:** Keil µVision, Visual Studio Code
+- **Simulation:** Proteus
+- **Version Control:** Git and GitHub
 
-- Keil µVision for Embedded C development and compilation
-- Proteus Design Suite for circuit simulation
+*Only tools and technologies actually used in the projects should be listed.*
 
-## Pin Configuration
+## Projects and Weekly Tasks
 
-| Signal | Microcontroller Pin |
-|---|---|
-| Temperature warning input | P1.0 |
-| Vibration warning input | P1.1 |
-| Green LED | P2.0 |
-| Red LED | P2.1 |
-| Buzzer | P2.2 |
+This repository may include:
 
-## Operating Logic
+- Weekly internship assignments
+- Source code and implementation files
+- Debugging exercises and corrected code
+- Simulation and testing evidence
+- Technical reports and documentation
+- Project-specific observations and results
 
-When both warning inputs are LOW, the firmware turns on the green LED and turns off the red LED and buzzer.
+Each task is documented according to its requirements, with relevant source files and supporting evidence where applicable.
 
-When either warning input is HIGH, the firmware turns off the green LED and turns on the red LED and buzzer.
+## Learning Outcomes
 
-## Project Structure
+Through these assignments, I aim to strengthen my understanding of programming, embedded-system concepts, debugging, simulation, testing, technical documentation, and version control.
 
-- `firmware/` — Embedded C source code and generated HEX file.
-- `circuit/` — Proteus project files.
-- `reports/` — Internship reports.
-- `screenshots/` — Build output and simulation evidence.
+## Notes
 
-## How to Run
-
-1. Open the firmware project in Keil µVision.
-2. Build the project and enable HEX file generation if required.
-3. Open the Proteus circuit.
-4. Load the generated HEX file into the microcontroller's Program File property.
-5. Run the simulation.
-6. Change the two logic-state inputs and compare the output indicators with the expected behavior.
-
-## Testing
-
-Test all four combinations of the two digital inputs:
-
-| P1.0 | P1.1 | Expected Output |
-|---|---|---|
-| LOW | LOW | Green LED ON; red LED and buzzer OFF |
-| LOW | HIGH | Red LED and buzzer ON |
-| HIGH | LOW | Red LED and buzzer ON |
-| HIGH | HIGH | Red LED and buzzer ON |
-
-Record the observed results after executing the tests in Proteus.
-
-## Limitations
-
-The warning inputs are simulated digital signals, not measurements from physical temperature or vibration sensors. This project demonstrates basic embedded firmware logic and simulation; it is not a certified industrial motor protection system.
+- Source code and documentation are organized by project or task.
+- Testing results are reported according to the work actually completed.
+- Screenshots and other evidence are included where available.
+- Project-specific instructions and limitations are documented separately when necessary.
 
 ## Author
 
-Soumyaa Satham
+**Electronics and Telecommunication Engineering Student**
 
-## Internship Task
+GitHub: [SoumyaaSatham](https://github.com/SoumyaSatham)
 
-Week 2 — Firmware Development for a Simulated Embedded System
